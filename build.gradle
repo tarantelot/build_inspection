@@ -1,0 +1,69 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'maven-publish'
+
+description = 'UAPKI for Java'
+
+group = 'com.sit'
+archivesBaseName = 'uapki'
+version = findProperty('version')
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+mainClassName = 'com.sit.uapki.Library'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'net.java.dev.jna:jna:5.9.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6' //NOTE: 2.6 - last release for Java7, 2.7-2.11.x - required Java8
+    testImplementation 'junit:junit:4.13'
+}
+
+jar {
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allJava
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0'
+    }
+}
+
+// You can publish with
+// ./gradlew -Pversion=$VERSION publish  -Pmaven_repo=$MVN_URL -PrepoUsername=$MVN_USER -PrepoPassword=$MVN_PASS
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifact sourcesJar
+            artifact javadocJar
+        }
+    }
+    repositories {
+        maven {
+            name = "repo"
+            url = findProperty("maven_repo")
+            credentials(PasswordCredentials)
+        }
+    }
+}
+
