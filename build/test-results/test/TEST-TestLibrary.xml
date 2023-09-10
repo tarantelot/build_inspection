@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestLibrary" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-10T08:36:41" hostname="TARANTELOT" time="0.055">
+  <properties/>
+  <testcase name="testProviders" classname="TestLibrary" time="0.055"/>
+  <system-out><![CDATA[ resPath: '/natives/win32-x86-64/'
+ libPrefix: ''
+ libExt: '.dll'
+Load from resource: '/natives/win32-x86-64/uapkic.dll'
+Loaded from tmp: 'C:\Users\taran\AppData\Local\Temp\uapki\uapkic.dll'
+Load from resource: '/natives/win32-x86-64/uapkif.dll'
+Loaded from tmp: 'C:\Users\taran\AppData\Local\Temp\uapki\uapkif.dll'
+Load from resource: '/natives/win32-x86-64/uapki.dll'
+Loaded from tmp: 'C:\Users\taran\AppData\Local\Temp\uapki\uapki.dll'
+Load from resource: '/natives/win32-x86-64/cm-pkcs12.dll'
+Loaded from tmp: 'C:\Users\taran\AppData\Local\Temp\uapki\cm-pkcs12.dll'
+jsonRequest: {"method":"VERSION"}
+jsonResponse: {"errorCode":0,"method":"VERSION","result":{"name":"UAPKI","version":"2.0.6"}}
+Library loaded. Name: UAPKI, Version: 2.0.6
+Ð‘Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð° (Ñ‚ÐµÑ?Ñ‚ utf-8). Ð?Ð°Ð·Ð²Ð°: UAPKI, Ð’ÐµÑ€Ñ?Ñ–Ñ?: 2.0.6
+jsonRequest: {"method":"INIT","parameters":{"cmProviders":{"allowedProviders":[{"lib":"cm-pkcs12","config":{"createPfx":{"bagCipher":"2.16.840.1.101.3.4.1.22","bagKdf":"1.2.840.113549.2.10","iterations":5555,"macAlgo":"2.16.840.1.101.3.4.2.2"}}}]},"certCache":{"path":"./../../library/test/data/certs/","trustedCerts":["MIIEwjCCBGqgAwIBAgIUFXeRuVCIV+0BAAAAAQAAAAEAAAAwDQYLKoYkAgEBAQEDAQEwgeUxCzAJBgNVBAYTAlVBMRkwFwYDVQQFExBVQS0zODc3Mzg2OS0wMDAxMT8wPQYDVQQDDDbQptC10L3RgtGAINGB0LXRgNGC0LjRhNGW0LrQsNGG0ZbRlyDQutC70Y7Rh9GW0LIgIjNEQSIxVjBUBgNVBAoMTdCi0J7QkiAi0IbQvdGC0LXQs9GA0L7QstCw0L3RliDRltC90YTQvtGA0LzQsNGG0ZbQudC90ZYg0YLQtdGF0L3QvtC70L7Qs9GW0ZciMQ8wDQYDVQQLDAbQptCh0JoxETAPBgNVBAcMCNCa0LjRl9CyMB4XDTE4MTIyMDE0NDY1MVoXDTIzMTIxOTE0NDY1MVowgeUxCzAJBgNVBAYTAlVBMRkwFwYDVQQFExBVQS0zODc3Mzg2OS0wMDAxMT8wPQYDVQQDDDbQptC10L3RgtGAINGB0LXRgNGC0LjRhNGW0LrQsNGG0ZbRlyDQutC70Y7Rh9GW0LIgIjNEQSIxVjBUBgNVBAoMTdCi0J7QkiAi0IbQvdGC0LXQs9GA0L7QstCw0L3RliDRltC90YTQvtGA0LzQsNGG0ZbQudC90ZYg0YLQtdGF0L3QvtC70L7Qs9GW0ZciMQ8wDQYDVQQLDAbQptCh0JoxETAPBgNVBAcMCNCa0LjRl9CyMIGIMGAGCyqGJAIBAQEBAwEBMFEGDSqGJAIBAQEBAwEBAgYEQKnW60XxPHCCgMSWeyMfXq32WOukwDcpHTjZa/Alyk4X+OlyDcYVtDool18Lwd6jZDi1ZOosF5/QEj5tuPrFeQQDJAAEISG7tT50bmRbC5N8+4UuzFTiZXfS1+xiFjZnxKOaUOK1AaOCAcEwggG9MCkGA1UdDgQiBCDQBpqgqN99cHrXCy9UDLH7GR8iHQw45x/hP5u2nqKMxzArBgNVHSMEJDAigCDQBpqgqN99cHrXCy9UDLH7GR8iHQw45x/hP5u2nqKMxzAZBgNVHSABAf8EDzANMAsGCSqGJAIBAQECAjAeBggrBgEFBQcBAwEB/wQPMA0wCwYJKoYkAgEBAQIBMBIGA1UdEwEB/wQIMAYBAf8CAQAwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NhLmlpdC51YS9kb3dubG9hZC9jcmxzL0QwMDY5QUEtZnVsbC5jcmwwQQYDVR0uBDowODA2oDSgMoYwaHR0cDovL2NhLmlpdC51YS9kb3dubG9hZC9jcmxzL0QwMDY5QUEtZGVsdGEuY3JsMD8GCCsGAQUFBwEBBDMwMTAvBggrBgEFBQcwAYYjaHR0cDovL2NhLmlpdC51YS9zZXJ2aWNlcy9vY3NwL2RzdHUwPgYIKwYBBQUHAQsEMjAwMC4GCCsGAQUFBzADhiJodHRwOi8vY2EuaWl0LnVhL3NlcnZpY2VzL3RzcC9kc3R1MA4GA1UdDwEB/wQEAwIBhjANBgsqhiQCAQEBAQMBAQNDAARAtnC8UdQtXAAHMlocSLPEYehwoQwruj3CwxNuhC89RG0RN7sMlWxz0osJqVISBlDSRgRAuHx3H1o8b6NtmsW0cA\u003d\u003d","MIIDgzCCAymgAwIBAgIUFXeRuVCIV+0BAAAAAQAAAF4AAAAwCgYIKoZIzj0EAwIwbTELMAkGA1UEBhMCVUExGTAXBgNVBAUTEFVBLTM4NzczODY5LTIwMjAxETAPBgNVBAMMCENBICIzREEiMRAwDgYDVQQKDAdTSVQgTExDMQswCQYDVQQLDAJDQTERMA8GA1UEBwwI0JrQuNGX0LIwHhcNMjAwOTIxMTM1OTQ5WhcNMjUwOTIwMTM1OTQ5WjBtMQswCQYDVQQGEwJVQTEZMBcGA1UEBRMQVUEtMzg3NzM4NjktMjAyMDERMA8GA1UEAwwIQ0EgIjNEQSIxEDAOBgNVBAoMB1NJVCBMTEMxCzAJBgNVBAsMAkNBMREwDwYDVQQHDAjQmtC40ZfQsjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ3Pwep69KtX0UgKDRNLV++VPjY6uSsJoYFYey7DT5mZ4cvhikDBzxBwA/oRVBPEHGFtQcsudT3ziXgbWWnAQESjggGlMIIBoTAdBgNVHQ4EFgQUPS9TgMyLoQ8GtIk/IK1FAYjOhYgwHwYDVR0jBBgwFoAUPS9TgMyLoQ8GtIk/IK1FAYjOhYgwFgYDVR0gBA8wDTALBgkqhiQCAQEBAgIwGwYIKwYBBQUHAQMEDzANMAsGCSqGJAIBAQECATASBgNVHRMBAf8ECDAGAQH/AgEAMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jYS5paXQudWEvZG93bmxvYWQvY3Jscy8zRDJGNTM4LWZ1bGwuY3JsMEEGA1UdLgQ6MDgwNqA0oDKGMGh0dHA6Ly9jYS5paXQudWEvZG93bmxvYWQvY3Jscy8zRDJGNTM4LWRlbHRhLmNybDBABggrBgEFBQcBAQQ0MDIwMAYIKwYBBQUHMAGGJGh0dHA6Ly9jYS5paXQudWEvc2VydmljZXMvb2NzcC9lY2RzYTA/BggrBgEFBQcBCwQzMDEwLwYIKwYBBQUHMAOGI2h0dHA6Ly9jYS5paXQudWEvc2VydmljZXMvdHNwL2VjZHNhMA4GA1UdDwEB/wQEAwIBhjAKBggqhkjOPQQDAgNIADBFAiEAzG/TY30IuHqnqrB4X0dux3s/ON4dzAr+Ac51S4xFqusCICKTd6AVop3iH9ZR9sDRIpoD/a/kxeh0BmdaCLKGZjtB"]},"crlCache":{"path":"./../../library/test/data/certs/crls/"},"offline":false,"tsp":{"url":"http://ca.iit.ua/services/tsp/dstu/"}}}
+jsonResponse: {"errorCode":0,"method":"INIT","result":{"certCache":{"countCerts":2,"countTrustedCerts":2},"crlCache":{"countCrls":0},"countCmProviders":1,"offline":false,"tsp":{"forced":false,"policyId":"","url":"http://ca.iit.ua/services/tsp/dstu/"}}}
+getCertCacheInfo().getCountCerts(): 2
+getCertCacheInfo().getCountTrustedCerts(): 2
+getCrlCacheInfo().getCountCrls(): 0
+getCountCmProviders(): 1
+isOffline(): false
+getTspInfo().getUrl(): http://ca.iit.ua/services/tsp/dstu/
+getTspInfo().getPolicy(): null
+
+jsonRequest: {"method":"PROVIDERS"}
+jsonResponse: {"errorCode":0,"method":"PROVIDERS","result":{"providers":[{"id":"PKCS12","apiVersion":"1.0.0","libVersion":"1.0.2","description":"PKCS12-provider","manufacturer":"2022 SPECINFOSYSTEMS LLC","supportListStorages":false,"flags":0}]}}
+Key provider info: id = PKCS12; version = 1.0.2; description = PKCS12-provider; manufacturer = 2022 SPECINFOSYSTEMS LLC
+List provider names: [PKCS12]
+jsonRequest: {"method":"DEINIT"}
+jsonResponse: {"errorCode":0,"method":"DEINIT","result":{}}
+jsonRequest: {"method":"DEINIT"}
+jsonResponse: {"errorCode":0,"method":"DEINIT","result":{}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
